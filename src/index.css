@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+  width: 100%;
+}
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  /* Custom milk-theme colors for a premium tactile look */
+  --color-milk-950: #0a1c17; /* Very deep pine green */
+  --color-milk-900: #0e2f26; /* Dark pine */
+  --color-milk-800: #123e32; /* Deep pine */
+  --color-milk-700: #174f41; /* Pine */
+  --color-milk-650: #1c5f4e; /* Medium Pine */
+  --color-milk-600: #22705d; /* Dark soft teal-green */
+  --color-milk-500: #2e8b75; /* Soft teal-green */
+  --color-milk-400: #55b29c; /* Lighter teal-green */
+  --color-milk-200: #9adbc9; /* Pale teal-green */
+  --color-milk-100: #d1f3ea; /* Creamy mint hint */
+  --color-milk-50: #eefbf7;  /* Fresh mint white */
+
+  /* Butter yellow accents */
+  --color-butter-600: #b45309; /* Deep golden amber */
+  --color-butter-500: #d97706; /* Golden butter amber */
+  --color-butter-400: #f59e0b; /* Rich honey */
+  --color-butter-300: #fbbf24; /* Salted butter yellow */
+  --color-butter-100: #fef3c7; /* Sweet cream yellow */
+  --color-butter-50: #fffbeb;  /* Warm butter cream white */
+
+  /* Warm neutral card colors */
+  --color-dairy-cream: #fdfbf7;
+  --color-dairy-crust: #f8f4eb;
+  --color-dairy-sand: #eee6d6;
+}
+
+/* Animations and decorative components */
+@layer utilities {
+  .clip-wave {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 75% 95%, 50% 85%, 25% 95%, 0% 85%);
+  }
+}
+
+.text-stroke-milk {
+  -webkit-text-stroke: 1px rgba(238, 251, 247, 0.4);
+}
+
+/* Scrollbar tuning */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-dairy-cream);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-milk-200);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-milk-400);
+}

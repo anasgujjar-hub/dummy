@@ -1,0 +1,6 @@
+{
+  "name": "MilkRise - Wholesome Dairy",
+  "description": "A premium organic farm-fresh dairy products website featuring interactive crop-catalog, wellness blogs, and local cooperative contact coordinates.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
