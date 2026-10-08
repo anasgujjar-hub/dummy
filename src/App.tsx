@@ -204,7 +204,7 @@ export default function App() {
                 element={
                   <>
                     <SEO
-                      title="Milk Rush - Certified Organic & Humane Dairy Supplier"
+                      title="Milk Rise - Certified Organic & Humane Dairy Supplier"
                       description="Premium organic and humane-certified bulk milk supplier for businesses across India."
                     />
                     <HomeView
@@ -225,8 +225,8 @@ export default function App() {
                 element={
                   <>
                     <SEO
-                      title="About Milk Rush"
-                      description="Learn about Milk Rush's mission of ethical dairy farming and animal welfare."
+                      title="About Milk Rise"
+                      description="Learn about Milk Rise mission of ethical dairy farming and animal welfare."
                     />
                     <AboutView
                       onCheckProducts={() => handlePageChange('products')}
@@ -308,7 +308,7 @@ export default function App() {
                 element={
                   <>
                     <SEO
-                      title="Contact Milk Rush"
+                      title="Contact Milk Rise"
                       description="Contact Milk Rush for bulk milk supply, partnerships, and dairy solutions."
                     />
                     <ContactView
