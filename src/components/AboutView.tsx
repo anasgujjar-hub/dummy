@@ -68,7 +68,7 @@ export default function AboutView({ onCheckProducts }: AboutViewProps) {
               </h2>
               <div className="text-sm text-milk-600 space-y-4 leading-relaxed font-light">
                 <p>
-                  Milk Rush began with a simple idea: produce high-quality dairy products without compromising on animal welfare, sustainability, or taste. What started as a small family dairy has grown into a trusted brand serving homes, cafes, and local stores.
+                  Milk Rise began with a simple idea: produce high-quality dairy products without compromising on animal welfare, sustainability, or taste. What started as a small family dairy has grown into a trusted brand serving homes, cafes, and local stores.
                 </p>
                 <p>
                   Founded by a family with generations of farming experience, Milk Rush was built on respect for the land and pride in honest work. Over the years, we’ve combined traditional dairy values with modern production methods to ensure every product meets high standards of safety, nutrition, and flavor.

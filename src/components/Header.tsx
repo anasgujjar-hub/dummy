@@ -72,7 +72,7 @@ export default function Header({
               </div>
               <div>
                 <span className="font-display font-bold text-xl tracking-tight text-milk-900 block leading-tight">
-                  Milk<span className="text-milk-500">Rush</span>
+                  Milk<span className="text-milk-500">Rise</span>
                 </span>
                 <span className="text-[10px] uppercase font-mono tracking-widest text-milk-600 block -mt-0.5 font-medium">
                   Organic Bulk Supplier

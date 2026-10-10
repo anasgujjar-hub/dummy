@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://milkrush.in/sitemap.xml
+Sitemap: https://milkrise.vercel.app/sitemap.xml
