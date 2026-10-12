@@ -230,7 +230,7 @@ export default function App() {
                 element={
                   <>
                     <SEO
-                      title="About Milk Rise"
+                      title="Our Journey – Committed to Freshness and Quality"
                       description="Learn about Milk Rise mission of ethical dairy farming and animal welfare."
                     />
                     <AboutView
@@ -247,7 +247,7 @@ export default function App() {
                 element={
                   <>
                     <SEO
-                      title="Our Dairy Model"
+                      title="Milkrise Business Model | Fresh Milk & Dairy Solutions"
                       description="Redefining dairy through premium animal welfare standards, organic milk, humane certified dairy, and a traceable milk supply."
                     />
                     <OurModelView
@@ -262,7 +262,7 @@ export default function App() {
                 element={
                   <>
                     <SEO
-                      title="Services - Farmer & Dairy Services"
+                      title="Our Services | Milkrise – Fresh Dairy Products & Solutions"
                       description="Discover our premium farmer and dairy services, featuring state of the art supply chains for bulk milk and organic products."
                     />
                     <ProductsView
@@ -285,7 +285,7 @@ export default function App() {
                 element={
                   <>
                     <SEO
-                      title="Sourcing WebMap & Logistics Ledger"
+                      title="Sitemap | Milkrise – Explore All Website Pages"
                       description="Interactive cow-welfare certified dairy cooperatives and live bulk cold-chain tracer routes across India."
                     />
                     <WebMapView />
@@ -298,7 +298,7 @@ export default function App() {
                 element={
                   <>
                     <SEO
-                      title="Dairy Insights & Resources"
+                      title="Milkrise Blog | Dairy Tips, Fresh Milk & Nutrition"
                       description="Better Farming & Better Milk - Read our articles on dairy farming, animal welfare standards, and quality testing."
                     />
                     <BlogView
@@ -313,7 +313,7 @@ export default function App() {
                 element={
                   <>
                     <SEO
-                      title="Contact Milk Rise"
+                      title="Contact Us | Milkrise – Get in Touch With Our Team"
                       description="Contact Milk Rush for bulk milk supply, partnerships, and dairy solutions."
                     />
                     <ContactView

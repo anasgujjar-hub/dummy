@@ -137,7 +137,6 @@ export default function AboutView({ onCheckProducts }: AboutViewProps) {
                 • Nourish Everyday Life
               </div>
             </div>
-
             {/* Vision Container card */}
             <div className="p-8 rounded-3xl bg-white border border-milk-100 shadow-sm relative overflow-hidden flex flex-col justify-between group">
               <div className="absolute top-0 right-0 w-32 h-32 bg-orange-50/50 rounded-bl-full pointer-events-none transition-all group-hover:scale-110" />
@@ -158,7 +157,6 @@ export default function AboutView({ onCheckProducts }: AboutViewProps) {
           </div>
         </div>
       </section>
-
       {/* Core Values grid */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -166,15 +164,13 @@ export default function AboutView({ onCheckProducts }: AboutViewProps) {
             <span className="font-mono text-xs uppercase tracking-widest text-[#c29c5b] font-bold block">The MilkRise Ledger</span>
             <h2 className="font-display font-bold text-3xl text-milk-900 tracking-tight">Core Dairy Values</h2>
           </div>
-
           <div className="grid md:grid-cols-2 gap-6">
             {values.map((v, i) => {
               const ValIcon = v.icon;
               return (
                 <div 
                   key={i}
-                  className="p-6 rounded-2xl bg-dairy-cream hover:bg-white border border-milk-50 hover:border-milk-100 transition-all shadow-sm hover:shadow-md flex gap-4"
-                >
+                  className="p-6 rounded-2xl bg-dairy-cream hover:bg-white border border-milk-50 hover:border-milk-100 transition-all shadow-sm hover:shadow-md flex gap-4">
                   <div className="w-12 h-12 rounded-xl bg-white border border-milk-100 text-milk-700 font-bold shrink-0 flex items-center justify-center">
                     <ValIcon className="w-5 h-5" />
                   </div>
@@ -188,7 +184,6 @@ export default function AboutView({ onCheckProducts }: AboutViewProps) {
           </div>
         </div>
       </section>
-
       {/* Milestones timeline vertical list */}
       <section className="py-20 bg-dairy-crust border-t border-milk-50">
         <div className="max-w-4xl mx-auto px-4">
