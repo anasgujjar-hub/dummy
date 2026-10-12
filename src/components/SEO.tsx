@@ -6,46 +6,46 @@ interface SEOProps {
 }
 
 export default function SEO({ title, description }: SEOProps) {
-  useEffect(() => {
-    // Update Title
-    document.title = title;
+ 
+useEffect(() => {
+  document.title = title;
 
-    // Update Meta Description
-    let metaDescription = document.querySelector('meta[name="description"]');
-    if (!metaDescription) {
-      metaDescription = document.createElement('meta');
-      metaDescription.setAttribute('name', 'description');
-      document.head.appendChild(metaDescription);
-    }
-    metaDescription.setAttribute('content', description);
+  let metaDescription = document.querySelector(
+    'meta[name="description"]'
+  );
 
-    // Update Canonical URL
-    let canonicalLink = document.querySelector('link[rel="canonical"]') || document.querySelector('link[ref="canonical"]');
-    if (!canonicalLink) {
-      canonicalLink = document.createElement('link');
-      canonicalLink.setAttribute('rel', 'canonical');
-      canonicalLink.setAttribute('ref', 'canonical'); // Supporting literal user-defined query
-      document.head.appendChild(canonicalLink);
-    } else {
-      // Ensure both attributes are present
-      canonicalLink.setAttribute('rel', 'canonical');
-      canonicalLink.setAttribute('ref', 'canonical');
-    }
+  if (!metaDescription) {
+    metaDescription = document.createElement('meta');
+    metaDescription.setAttribute('name', 'description');
+    document.head.appendChild(metaDescription);
+  }
 
-    // Clean current path: remove trailing slash if any
-    let path = window.location.pathname;
-    if (path.endsWith('/') && path.length > 1) {
-      path = path.slice(0, -1);
-    }
+  metaDescription.setAttribute('content', description);
 
-    // Standardize mapping for base redirects (e.g. products -> services)
-    if (path === '/products') {
-      path = '/services';
-    }
+  let canonicalLink = document.querySelector(
+    'link[rel="canonical"]'
+  );
 
-    const canonicalUrl = `https://milkrise.netlify.app${path === '/' ? '' : path}`;
-    canonicalLink.setAttribute('href', canonicalUrl);
-  }, [title, description]);
+  if (!canonicalLink) {
+    canonicalLink = document.createElement('link');
+    canonicalLink.setAttribute('rel', 'canonical');
+    document.head.appendChild(canonicalLink);
+  }
+
+  const aliases: Record<string, string> = {
+    '/products': '/services',
+    '/about': '/aboutus',
+  };
+
+  const pathname = window.location.pathname.replace(/\/+$/, '') || '/';
+  const canonicalPath = aliases[pathname] || pathname;
+
+  canonicalLink.setAttribute(
+    'href',
+    `https://milkrise.vercel.app${canonicalPath === '/' ? '/' : canonicalPath}`
+  );
+}, [title, description]);
+
 
   return null;
 }
