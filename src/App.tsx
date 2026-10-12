@@ -203,6 +203,16 @@ export default function App() {
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.25, ease: 'easeOut' }}
           >
+            <Suspense
+  fallback={
+    <div
+      className="min-h-[50vh] flex items-center justify-center"
+      role="status"
+    >
+      Loading MilkRise...
+    </div>
+  }
+></Suspense>
             <Routes>
               <Route
                 path="/"
@@ -327,6 +337,7 @@ export default function App() {
 
               <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
+            </Suspense>
           </motion.div>
         </AnimatePresence>
       </main>
