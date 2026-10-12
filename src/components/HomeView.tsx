@@ -117,20 +117,18 @@ export default function HomeView({
             {/* Right Column Interactive Lactose Splash Frame */}
             <div className="lg:col-span-5 flex justify-center">
               <motion.div
-               initial={false}
-               animate={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.7, delay: 0.2 }}
                 className="relative w-full max-w-sm sm:max-w-md aspect-square rounded-[2rem] overflow-hidden shadow-2xl bg-milk-800 border-4 border-milk-700/50"
               >
-<img
-  src="https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&q=70&w=640"
-  alt="Organic dairy milk being poured"
-  width={640}
-  height={640}
-  fetchPriority="high"
-  decoding="async"
-  className="w-full h-full object-cover opacity-90 hover:scale-105 transition-transform duration-700"
-/>
+                <img
+                  src="https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&q=80&w=720"
+                  alt="Organic Dairy Farm Pouring Milk"
+                  referrerPolicy="no-referrer"
+                  decoding="async"
+                  className="w-full h-full object-cover opacity-90 hover:scale-105 transition-transform duration-700"
+                />
                 
                 {/* Visual badge card floating */}
                 <div className="absolute bottom-6 left-6 right-6 p-4 rounded-2xl bg-white/95 backdrop-blur-md shadow-lg border border-milk-100 flex items-center justify-between text-milk-900">
