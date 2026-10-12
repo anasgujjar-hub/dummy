@@ -117,8 +117,8 @@ export default function HomeView({
             {/* Right Column Interactive Lactose Splash Frame */}
             <div className="lg:col-span-5 flex justify-center">
               <motion.div
-                initial={{ opacity: 0, scale: 0.95 }}
-                animate={{ opacity: 1, scale: 1 }}
+               initial={{ opacity: 0, y: 10 }}
+               animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, delay: 0.2 }}
                 className="relative w-full max-w-sm sm:max-w-md aspect-square rounded-[2rem] overflow-hidden shadow-2xl bg-milk-800 border-4 border-milk-700/50"
               >
